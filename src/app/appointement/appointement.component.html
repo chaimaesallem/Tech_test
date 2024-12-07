@@ -1,0 +1,25 @@
+
+<div class="container">
+    <h2>Appointements list</h2>
+    <table class="table">
+        <thead>
+            <tr>
+               
+                <th>Name</th>
+                <th>Date</th>
+                <th>time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointments">
+               
+                <td>{{ appointment.name }}</td>
+                <td>{{ appointment.date }}</td>
+                <td>{{ appointment.time }}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
